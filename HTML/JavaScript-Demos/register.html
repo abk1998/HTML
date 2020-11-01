@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var uname = ["ram2", "tom3", "ra4", "win5"]
+        var name = prompt("enter name")
+        flag = false;
+        for (var i in uname) {
+            if (uname[i] == name) {
+                alert("welcome")
+                flag = false
+                break
+
+            } else {
+                flag = true
+            }
+        }
+        if (flag == true)
+            alert("invalid userid")
+    </script>
+</head>
+
+<body>
+    <form action="login.html" name="MyForm">
+        Name<input type="text" id="username">
+        <input type="button" value="Register" onclick="register()">
+        <div id="myid"></div>
+    </form>
+</body>
+
+</html>

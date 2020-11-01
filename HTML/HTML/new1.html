@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Title</title>
+    <style>
+        p,
+        h1,
+        h2 {
+            color: green;
+        }
+        
+        h2.myclass {
+            background-color: yellow;
+        }
+        /* #myid {
+            border-color: violet;
+            font-weight: bold;
+            border-style: solid;
+        } */
+        
+        #header {
+            border-color: red;
+            font-weight: bold;
+            border-style: solid;
+        }
+        
+        div p {
+            color: hotpink;
+        }
+        /* Works only for immediate children and not the ones under */
+        
+        div>p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- <p id="myid">This is a paragrah -1 with my id</p>
+    <p>This si a paragraph -2 welcome</p>
+    <h1>This is a header</h1>
+    <h1 id="header">This is a header with id</h1>
+    <h2 id="myclass">HI</h2> -->
+
+    <p> Inside p</p>
+    <p class="myclass">Inside P with class</p>
+    <h1>hello world</h1>
+    <h1 id="header" class="myclass">Inside h1 with class</h1>
+    <h2>Inside H2</h2>
+    <h2 class="myclass">Inside h2</h2>
+    <div>
+        <h1>h1 Inside div</h1>
+        <p>p child of div</p>
+        <p>second child of div</p>
+        <section>
+            <h1>h1 Inside section</h1>
+            <p>p child of section</p>
+        </section>
+    </div>
+
+
+    <p>This si a paragraph -2 welcome hereeeeeeeeeeeeeeeeeeeeee</p>
+</body>
+
+</html>

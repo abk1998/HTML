@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function sayHello() {
+            txt = document.getElementById("mytxt").value;
+
+            document.getElementById("mydiv").innerHTML = "welcome " + txt;
+        }
+    </script>
+
+</head>
+
+<body>
+    <textarea id="mytxt" rows="10" cols="10" onkeyup='sayHello()'></textarea>
+    <div id="mydiv" style="background-color: yellow;"></div>
+</body>
+</html

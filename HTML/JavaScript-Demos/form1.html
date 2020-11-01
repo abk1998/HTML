@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validation() {
+            if (document.getElementById("username").value == "") {
+                alert("enter your name");
+                document.myform.Name.focus();
+            } else if (document.getElementById("pswd").value == "") {
+                alert("enter your password");
+                document.myform.pass.focus();
+            } else if (document.getElementById("age").value == "") {
+                alert("enter your age");
+                document.myform.AGE.focus();
+            } else if (document.getElementById("gen1").value == "" && document.getElementById("gen2").value == " ") {
+                alert("enter your gender");
+                document.myform.gender[0].checked();
+            } else {
+                alert("you are registered");
+                document.myform.submit();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="typof.html" name="myform">
+        Name <input type="text" name="Name" id="username"><br> password <input type="password" name="pass" id="pswd"><br> age
+        <input type="text" name="AGE" id="age"><br> Female
+        <input type="radio" name="gender" id="gen1" value="female"> male
+        <input type="radio" name="gender" id="gen2" value="male">
+        <input type="button" value="click here" onclick="validation()">
+    </form>
+</body>
+
+</html>

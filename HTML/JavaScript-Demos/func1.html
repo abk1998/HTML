@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function greetUser() {
+        //     document.write('Hello');
+        // }
+
+        // function greetUser(username) {
+        //     document.write('Welcome' + username);
+        // }
+
+
+        // greetUser();
+        // greet();
+
+        // function greet() {
+        //     document.write('Hello');
+        // }
+        // check();
+        // //below is a function expression where variable is assigned to function
+        // var check = function() {
+        //     document.write('welcome');
+        // }
+        // check();
+        var check = (name) => {
+            document.write('Great Day' + name)
+        }
+        check('Priya');
+
+        setTimeout(function() {
+            console.log('Timeout Completed')
+        }, 2000)
+        setInterval(function() {
+            console.log('Ping Server ......')
+        }, 100)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

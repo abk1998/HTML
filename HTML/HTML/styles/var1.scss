@@ -1,0 +1,15 @@
+$bgcolor:red;
+$color:yellow;
+// global means that its available for all css files
+$fontsize:20px !global;
+h2 {
+    background-color: $bgcolor;
+    color: $color;
+    font-size: $fontsize;
+}
+
+p {
+    $bgcolor: orange !global;
+    color: $bgcolor;
+    font-size: $fontsize;
+}
